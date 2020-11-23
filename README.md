@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
     <h1>A C++ Behavior Tree Implementation</h1>
     <h2>The Code</h2>
     <p>
@@ -19,3 +27,5 @@
         The red agent stands in the middle of the screen while a green agent walks a straight path past him. When the red agent sees the green 
         agent (enters vision cone). The agent approaches and they have a short conversation. Then the red agent returns to his post.
     </p>
+</body>
+</html>
