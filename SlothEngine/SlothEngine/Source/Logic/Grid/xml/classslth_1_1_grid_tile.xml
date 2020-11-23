@@ -1,0 +1,545 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classslth_1_1_grid_tile" kind="class" language="C++" prot="public">
+    <compoundname>slth::GridTile</compoundname>
+    <includes refid="_grid_tile_8h" local="no">GridTile.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classslth_1_1_grid_tile_1a653cc572049c476953139b2fb93bdf71" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float slth::GridTile::kInfinity</definition>
+        <argsstring></argsstring>
+        <name>kInfinity</name>
+        <initializer>= std::numeric_limits&lt;float&gt;::max()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="44" column="24" bodyfile="GridTile.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_tile_1af8d0a05b7c4a71455d538f3c2a85bda5" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr u32</type>
+        <definition>constexpr u32 slth::GridTile::kInvalidTile</definition>
+        <argsstring></argsstring>
+        <name>kInvalidTile</name>
+        <initializer>= std::numeric_limits&lt;u32&gt;::max()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="45" column="22" bodyfile="GridTile.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classslth_1_1_grid_tile_1a7eda403d4e7d7d061eeed26c99af4426" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t slth::GridTile::m_index</definition>
+        <argsstring></argsstring>
+        <name>m_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="50" column="8" bodyfile="GridTile.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_tile_1a78fe6212731c46d9c3a4e5023017f44f" prot="private" static="no" mutable="no">
+        <type>Vector2f</type>
+        <definition>Vector2f slth::GridTile::m_coordinates</definition>
+        <argsstring></argsstring>
+        <name>m_coordinates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="51" column="10" bodyfile="GridTile.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_tile_1aa7d259c040558952d76fcaad6551c6cc" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color slth::GridTile::m_color</definition>
+        <argsstring></argsstring>
+        <name>m_color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="52" column="7" bodyfile="GridTile.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_tile_1ad20c252697c7e9f3423c123b5fe02bd6" prot="private" static="no" mutable="no">
+        <type>Actor *</type>
+        <definition>Actor* slth::GridTile::m_pActor</definition>
+        <argsstring></argsstring>
+        <name>m_pActor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="53" column="7" bodyfile="GridTile.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_tile_1a15968761a2d68ee703f95a8f9cc79dae" prot="private" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 slth::GridTile::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="54" column="5" bodyfile="GridTile.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_tile_1aeca1faf7cc8baa8268db601efa3b297b" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t slth::GridTile::m_predecessor</definition>
+        <argsstring></argsstring>
+        <name>m_predecessor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="57" column="8" bodyfile="GridTile.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_tile_1a8ee2c06520e03714f005d73fd8f511d2" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float slth::GridTile::m_weight</definition>
+        <argsstring></argsstring>
+        <name>m_weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="58" column="7" bodyfile="GridTile.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_tile_1ab715662280519e8f6699f3150b5f4685" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float slth::GridTile::m_gScore</definition>
+        <argsstring></argsstring>
+        <name>m_gScore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="59" column="7" bodyfile="GridTile.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_tile_1a9a6fe9faaeab395c02a9203fb8fb10e3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float slth::GridTile::m_fScore</definition>
+        <argsstring></argsstring>
+        <name>m_fScore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="60" column="7" bodyfile="GridTile.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_tile_1a337b10d7b18f7f802c7adc9e51133b52" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool slth::GridTile::m_visited</definition>
+        <argsstring></argsstring>
+        <name>m_visited</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="61" column="6" bodyfile="GridTile.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1ae629d02b8fb722910ec133d029e8dd00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API</type>
+        <definition>GridTile::GridTile</definition>
+        <argsstring>()</argsstring>
+        <name>GridTile</name>
+        <briefdescription>
+<para>Default Constructor </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="24" column="10" bodyfile="GridTile.cpp" bodystart="6" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1a88d5892f2be4c01b8de9912ff54e47d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API</type>
+        <definition>slth::GridTile::GridTile</definition>
+        <argsstring>(int x, int y, float weight, Color color)</argsstring>
+        <name>GridTile</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Explicit Constructor </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X position</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y position</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Weight</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Color</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="33" column="10" bodyfile="GridTile.cpp" bodystart="21" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1aeede54a9d1311ad0d6a38f519b3f8e09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API float</type>
+        <definition>float slth::GridTile::GetFScore</definition>
+        <argsstring>()</argsstring>
+        <name>GetFScore</name>
+        <briefdescription>
+<para>Gets the Fscore, but includes a weight of the tiles in the calculation </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="39" column="16" bodyfile="GridTile.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1afe2709e3dbff8b5ac97e1e7c7b809a42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>void slth::GridTile::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="41" column="15" bodyfile="GridTile.cpp" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1adb32406354d04d1e8050d9111edeeba1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API float</type>
+        <definition>SLTH_API float slth::GridTile::GetWeight</definition>
+        <argsstring>()</argsstring>
+        <name>GetWeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="67" column="16" bodyfile="GridTile.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1ac6e09863f6b395759573f5ac351f1d3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>SLTH_API void slth::GridTile::SetWeight</definition>
+        <argsstring>(float weight)</argsstring>
+        <name>SetWeight</name>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="68" column="15" bodyfile="GridTile.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1a70545e9a6565f17dba122a87d4ad073e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API Vector2f</type>
+        <definition>SLTH_API Vector2f slth::GridTile::GetCoordinates</definition>
+        <argsstring>()</argsstring>
+        <name>GetCoordinates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="69" column="19" bodyfile="GridTile.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1ada29250244b68f22a62ae953ecb3ae3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>SLTH_API void slth::GridTile::SetColor</definition>
+        <argsstring>(Color color)</argsstring>
+        <name>SetColor</name>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="70" column="15" bodyfile="GridTile.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1ab85fd72068288830ebfec50ba131c0cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API u32</type>
+        <definition>SLTH_API u32 slth::GridTile::GetType</definition>
+        <argsstring>()</argsstring>
+        <name>GetType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="71" column="14" bodyfile="GridTile.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1abb855aa664d1608012b654dd67c171cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API Color</type>
+        <definition>SLTH_API Color slth::GridTile::GetColor</definition>
+        <argsstring>()</argsstring>
+        <name>GetColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="72" column="16" bodyfile="GridTile.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1ae2b8c569f6fff5619b6d2fb93fd6ce65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API size_t</type>
+        <definition>SLTH_API size_t slth::GridTile::GetIndex</definition>
+        <argsstring>()</argsstring>
+        <name>GetIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="73" column="17" bodyfile="GridTile.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1a75e7f288881f8d0bd41d03f8cc586aad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>SLTH_API void slth::GridTile::SetIndex</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>SetIndex</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="74" column="15" bodyfile="GridTile.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1a887e9efe2631348216d4a97b9d1a9bc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>SLTH_API void slth::GridTile::SetScores</definition>
+        <argsstring>(float gScore, float fScore)</argsstring>
+        <name>SetScores</name>
+        <param>
+          <type>float</type>
+          <declname>gScore</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fScore</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="75" column="15" bodyfile="GridTile.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1a5985561df5671709b520c301ee073a43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API float</type>
+        <definition>SLTH_API float slth::GridTile::GetGScore</definition>
+        <argsstring>()</argsstring>
+        <name>GetGScore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="76" column="16" bodyfile="GridTile.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1afc199c485fcd3e578353ea121ff0b2bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>SLTH_API void slth::GridTile::SetPredecessor</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>SetPredecessor</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="78" column="15" bodyfile="GridTile.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1ac5d33dc1d69164b01a7eca60ec9d9862" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API size_t</type>
+        <definition>SLTH_API size_t slth::GridTile::GetPredecessor</definition>
+        <argsstring>()</argsstring>
+        <name>GetPredecessor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="79" column="17" bodyfile="GridTile.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1ad32a9a77ddaca16939b75f8abf23f9ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>SLTH_API void slth::GridTile::SetType</definition>
+        <argsstring>(u32 type)</argsstring>
+        <name>SetType</name>
+        <param>
+          <type>u32</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="80" column="15" bodyfile="GridTile.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1a244762fad4e083f24b45fe6c2e338503" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API bool</type>
+        <definition>SLTH_API bool slth::GridTile::GetVisited</definition>
+        <argsstring>()</argsstring>
+        <name>GetVisited</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="81" column="15" bodyfile="GridTile.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_tile_1a7e3d6f83ae48796b2c9d5a8de47e041a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>SLTH_API void slth::GridTile::SetVisited</definition>
+        <argsstring>(bool visited)</argsstring>
+        <name>SetVisited</name>
+        <param>
+          <type>bool</type>
+          <declname>visited</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridTile.h" line="82" column="15" bodyfile="GridTile.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a single tile in the grid system </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="GridTile.h" line="18" column="1" bodyfile="GridTile.h" bodystart="17" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classslth_1_1_grid_tile_1abb855aa664d1608012b654dd67c171cc" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>GetColor</name></member>
+      <member refid="classslth_1_1_grid_tile_1a70545e9a6565f17dba122a87d4ad073e" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>GetCoordinates</name></member>
+      <member refid="classslth_1_1_grid_tile_1aeede54a9d1311ad0d6a38f519b3f8e09" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>GetFScore</name></member>
+      <member refid="classslth_1_1_grid_tile_1a5985561df5671709b520c301ee073a43" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>GetGScore</name></member>
+      <member refid="classslth_1_1_grid_tile_1ae2b8c569f6fff5619b6d2fb93fd6ce65" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>GetIndex</name></member>
+      <member refid="classslth_1_1_grid_tile_1ac5d33dc1d69164b01a7eca60ec9d9862" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>GetPredecessor</name></member>
+      <member refid="classslth_1_1_grid_tile_1ab85fd72068288830ebfec50ba131c0cb" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>GetType</name></member>
+      <member refid="classslth_1_1_grid_tile_1a244762fad4e083f24b45fe6c2e338503" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>GetVisited</name></member>
+      <member refid="classslth_1_1_grid_tile_1adb32406354d04d1e8050d9111edeeba1" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>GetWeight</name></member>
+      <member refid="classslth_1_1_grid_tile_1ae629d02b8fb722910ec133d029e8dd00" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>GridTile</name></member>
+      <member refid="classslth_1_1_grid_tile_1a88d5892f2be4c01b8de9912ff54e47d2" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>GridTile</name></member>
+      <member refid="classslth_1_1_grid_tile_1a653cc572049c476953139b2fb93bdf71" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>kInfinity</name></member>
+      <member refid="classslth_1_1_grid_tile_1af8d0a05b7c4a71455d538f3c2a85bda5" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>kInvalidTile</name></member>
+      <member refid="classslth_1_1_grid_tile_1aa7d259c040558952d76fcaad6551c6cc" prot="private" virt="non-virtual"><scope>slth::GridTile</scope><name>m_color</name></member>
+      <member refid="classslth_1_1_grid_tile_1a78fe6212731c46d9c3a4e5023017f44f" prot="private" virt="non-virtual"><scope>slth::GridTile</scope><name>m_coordinates</name></member>
+      <member refid="classslth_1_1_grid_tile_1a9a6fe9faaeab395c02a9203fb8fb10e3" prot="private" virt="non-virtual"><scope>slth::GridTile</scope><name>m_fScore</name></member>
+      <member refid="classslth_1_1_grid_tile_1ab715662280519e8f6699f3150b5f4685" prot="private" virt="non-virtual"><scope>slth::GridTile</scope><name>m_gScore</name></member>
+      <member refid="classslth_1_1_grid_tile_1a7eda403d4e7d7d061eeed26c99af4426" prot="private" virt="non-virtual"><scope>slth::GridTile</scope><name>m_index</name></member>
+      <member refid="classslth_1_1_grid_tile_1ad20c252697c7e9f3423c123b5fe02bd6" prot="private" virt="non-virtual"><scope>slth::GridTile</scope><name>m_pActor</name></member>
+      <member refid="classslth_1_1_grid_tile_1aeca1faf7cc8baa8268db601efa3b297b" prot="private" virt="non-virtual"><scope>slth::GridTile</scope><name>m_predecessor</name></member>
+      <member refid="classslth_1_1_grid_tile_1a15968761a2d68ee703f95a8f9cc79dae" prot="private" virt="non-virtual"><scope>slth::GridTile</scope><name>m_type</name></member>
+      <member refid="classslth_1_1_grid_tile_1a337b10d7b18f7f802c7adc9e51133b52" prot="private" virt="non-virtual"><scope>slth::GridTile</scope><name>m_visited</name></member>
+      <member refid="classslth_1_1_grid_tile_1a8ee2c06520e03714f005d73fd8f511d2" prot="private" virt="non-virtual"><scope>slth::GridTile</scope><name>m_weight</name></member>
+      <member refid="classslth_1_1_grid_tile_1afe2709e3dbff8b5ac97e1e7c7b809a42" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>Reset</name></member>
+      <member refid="classslth_1_1_grid_tile_1ada29250244b68f22a62ae953ecb3ae3f" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>SetColor</name></member>
+      <member refid="classslth_1_1_grid_tile_1a75e7f288881f8d0bd41d03f8cc586aad" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>SetIndex</name></member>
+      <member refid="classslth_1_1_grid_tile_1afc199c485fcd3e578353ea121ff0b2bd" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>SetPredecessor</name></member>
+      <member refid="classslth_1_1_grid_tile_1a887e9efe2631348216d4a97b9d1a9bc0" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>SetScores</name></member>
+      <member refid="classslth_1_1_grid_tile_1ad32a9a77ddaca16939b75f8abf23f9ff" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>SetType</name></member>
+      <member refid="classslth_1_1_grid_tile_1a7e3d6f83ae48796b2c9d5a8de47e041a" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>SetVisited</name></member>
+      <member refid="classslth_1_1_grid_tile_1ac6e09863f6b395759573f5ac351f1d3a" prot="public" virt="non-virtual"><scope>slth::GridTile</scope><name>SetWeight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Actor ID="GreenAgent" tag="GreenAgent">
+    <Components>
+      <Sprite path=".\Assets\agent-green.png" source-left="0"
+              source-top="0" source-right="50" source-bottom="50"
+              origin-x="25" origin-y="25"></Sprite>
+      <Transform w="25" h="25" x="425" y="799" rotation="0" angular-acceleration="280" speed="100" acceleration="85" ></Transform>
+      <Text r="255" g="255" b="255" size="20" offset-y="-55" offset-x="-50"></Text>
+      <AI>
+        <BehaviorTree>
+          <Selector>
+            <Sequence>
+              <Patrol loop="false" target="RedAgent" radius="150" vision-arc="360">
+                <Waypoint x="400" y="1"/>
+              </Patrol>
+              <Turn angle="120" />
+              <Idle duration="9.5" />
+              <Speak text="Don't quit your day job" duration="2"/>
+              
+              <Patrol loop="false">
+                <Waypoint x="400" y="1"/>
+              </Patrol>
+              <Teleport x="425" y="900" rotation="0"/>
+              <Idle duration="1.5" />
+              <LoseTarget />
+            </Sequence>
+            <Sequence>
+              <!-- Default Behavior -->
+              <Patrol loop="false">
+                  <Waypoint x="400" y="1"/>
+              </Patrol>
+              <Teleport x="425" y="900" rotation="0"/>
+            </Sequence>
+          </Selector>
+        </BehaviorTree>
+      </AI>
+    </Components>
+  </Actor>
+
+  <Actor ID="RedAgent" tag="RedAgent">
+    <Components>
+      <Sprite path=".\Assets\agent-red.png" source-left="0"
+              source-top="0" source-right="50" source-bottom="50"
+              origin-x="25" origin-y="25"></Sprite>
+      <Transform w="50" h="50" x="825" y="425" rotation="0" angular-acceleration="280" speed="300" acceleration="85" ></Transform>
+      <Text r="255" g="255" b="255" size="20" offset-y="35" offset-x="20"></Text>
+      <AI>
+        <BehaviorTree>
+          <Selector>
+            <Sequence>
+              <Patrol loop="false" target="GreenAgent" radius="420" vision-arc="60">
+                <Waypoint x="825" y="425" />
+              </Patrol>
+              <Chase acquire-distance="150" repath-time="1"/>
+              <Speak duration="1" text="Want to see me dance?"/>
+              <Turn angle="-90"></Turn>
+              <Turn angle="45"></Turn>
+              <Turn angle="-90"></Turn>
+              <Turn angle="-45"></Turn>
+              <Turn angle="-90"></Turn>
+              <Turn angle="-170"></Turn>
+              <Turn angle="-90"></Turn>
+              <Turn angle="-45"></Turn>
+              <Turn angle="-90"></Turn>
+              <Turn angle="60"></Turn>
+              <Turn angle="-90"></Turn>
+              <Turn angle="-45"></Turn>
+              <Turn angle="180"></Turn>
+              <Turn angle="199"></Turn>
+              <Turn angle="-45"></Turn>
+              <Turn angle="-210"></Turn>
+              <Turn angle="-45"></Turn>
+              <Speak duration="1" text="Tada!"/>
+              <Idle duration="1.5" />
+              <Speak duration="1" text=":("/>
+
+              <Turn angle="120"></Turn>
+            </Sequence>
+            <Sequence>
+              <!-- Default Behavior -->
+              <Patrol loop="false" target="GreenAgent" radius="500" vision-arc="60">
+                <Waypoint x="825" y="425" />
+              </Patrol>
+              <Turn angle="-90" />
+            </Sequence>
+          </Selector>
+        </BehaviorTree>
+      </AI>
+    </Components>
+  </Actor>
+
+</Root>
+

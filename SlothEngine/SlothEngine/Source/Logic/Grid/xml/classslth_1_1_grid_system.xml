@@ -1,0 +1,1043 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classslth_1_1_grid_system" kind="class" language="C++" prot="public">
+    <compoundname>slth::GridSystem</compoundname>
+    <includes refid="_grid_system_8h" local="no">GridSystem.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1ad618d46e69d0d703ec8438292f0ef170" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float slth::GridSystem::kImpassibleWeight</definition>
+        <argsstring></argsstring>
+        <name>kImpassibleWeight</name>
+        <initializer>= 10.f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="160" column="24" bodyfile="GridSystem.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1a9b728e7cfffb806855560cf0c31296b3" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float slth::GridSystem::kDiagonalWeight</definition>
+        <argsstring></argsstring>
+        <name>kDiagonalWeight</name>
+        <initializer>= 1.7f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="161" column="24" bodyfile="GridSystem.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1ae85ad9fb37effa3f96780156d207cede" prot="private" static="no" mutable="no">
+        <type>Vector2f</type>
+        <definition>Vector2f slth::GridSystem::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="165" column="10" bodyfile="GridSystem.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1a34fa379a85bf7a06daab6ce968587006" prot="private" static="no" mutable="no">
+        <type>Vector2f</type>
+        <definition>Vector2f slth::GridSystem::m_position</definition>
+        <argsstring></argsstring>
+        <name>m_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="166" column="10" bodyfile="GridSystem.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1aee5714a2e18d404c6d40a313ca8f4646" prot="private" static="no" mutable="no">
+        <type>Vector2f</type>
+        <definition>Vector2f slth::GridSystem::m_tileSize</definition>
+        <argsstring></argsstring>
+        <name>m_tileSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="167" column="10" bodyfile="GridSystem.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1ae87c941a209003faa13643e49f2fafb9" prot="private" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 slth::GridSystem::m_tileSpacing</definition>
+        <argsstring></argsstring>
+        <name>m_tileSpacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="168" column="5" bodyfile="GridSystem.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1ae8f315581c3268dd6f748272d33b0aa2" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color slth::GridSystem::m_backgroundColor</definition>
+        <argsstring></argsstring>
+        <name>m_backgroundColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="169" column="7" bodyfile="GridSystem.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1a4b06780f9f1bcd4d25652e8d61aa2110" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classslth_1_1_grid_tile" kindref="compound">GridTile</ref> &gt;</type>
+        <definition>std::vector&lt;GridTile&gt; slth::GridSystem::m_tiles</definition>
+        <argsstring></argsstring>
+        <name>m_tiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="170" column="13" bodyfile="GridSystem.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1a2f8ea44ce65847b28daeb26360bf2333" prot="private" static="no" mutable="no">
+        <type><ref refid="classslth_1_1_grid_tile" kindref="compound">GridTile</ref></type>
+        <definition>GridTile slth::GridSystem::m_invalidTile</definition>
+        <argsstring></argsstring>
+        <name>m_invalidTile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="171" column="10" bodyfile="GridSystem.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1afaccc6aa164ccafe9906bbfd35cfabf5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool slth::GridSystem::m_hidden</definition>
+        <argsstring></argsstring>
+        <name>m_hidden</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="172" column="6" bodyfile="GridSystem.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1aa264da948d8c839fda9f667aac06c7f4" prot="private" static="no" mutable="no">
+        <type>OpenSet</type>
+        <definition>OpenSet slth::GridSystem::m_openSet</definition>
+        <argsstring></argsstring>
+        <name>m_openSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="178" column="9" bodyfile="GridSystem.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1a40b4a4f529900ee1f4785790777a8d4f" prot="private" static="no" mutable="no">
+        <type><ref refid="classslth_1_1_grid_tile" kindref="compound">GridTile</ref> *</type>
+        <definition>GridTile* slth::GridSystem::m_pCurrentNode</definition>
+        <argsstring></argsstring>
+        <name>m_pCurrentNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="179" column="10" bodyfile="GridSystem.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1a74b40cec2aaf5586fdee8ad034cd5491" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool slth::GridSystem::m_pathInProgress</definition>
+        <argsstring></argsstring>
+        <name>m_pathInProgress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="180" column="6" bodyfile="GridSystem.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1a453540272e689d7b6fe57bc550fc1fd0" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t slth::GridSystem::m_pathStartIndex</definition>
+        <argsstring></argsstring>
+        <name>m_pathStartIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="181" column="8" bodyfile="GridSystem.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1a0653474caa41a3e870b798110739c095" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t slth::GridSystem::m_pathEndIndex</definition>
+        <argsstring></argsstring>
+        <name>m_pathEndIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="182" column="8" bodyfile="GridSystem.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1a91ef2c74e832e9be18407e167f52bf7b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool slth::GridSystem::m_useWeightOnly</definition>
+        <argsstring></argsstring>
+        <name>m_useWeightOnly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="183" column="6" bodyfile="GridSystem.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classslth_1_1_grid_system_1ac77e6b006a81662b78c01a8055d89c92" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool slth::GridSystem::m_getClose</definition>
+        <argsstring></argsstring>
+        <name>m_getClose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="184" column="6" bodyfile="GridSystem.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a8e9a188573e4f7e8528cb8fa6031579a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API</type>
+        <definition>GridSystem::GridSystem</definition>
+        <argsstring>()</argsstring>
+        <name>GridSystem</name>
+        <briefdescription>
+<para>Default Constructor </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="45" column="10" bodyfile="GridSystem.cpp" bodystart="22" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a8a5c4ced64fe2b4a874d9564b04ba3a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API bool</type>
+        <definition>bool slth::GridSystem::Init</definition>
+        <argsstring>(slth::Vector2f size, slth::Vector2f position, slth::Vector2f tileSize, float tileSpacing)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>slth::Vector2f</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>slth::Vector2f</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>slth::Vector2f</type>
+          <declname>tileSize</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>tileSpacing</declname>
+        </param>
+        <briefdescription>
+<para>Initialze the grid from supplied data </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tileSize</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tileSpacing</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="55" column="15" bodyfile="GridSystem.cpp" bodystart="37" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a883f5bf85737222364d3649e0c2ff152" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>void slth::GridSystem::Init</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Inisitalize the grid from an XML file </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="61" column="15" bodyfile="GridSystem.cpp" bodystart="50" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a569daac03e381899b3058629cee8d4bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API <ref refid="classslth_1_1_grid_tile" kindref="compound">GridTile</ref> &amp;</type>
+        <definition>slth::GridTile &amp; slth::GridSystem::GetCenterTile</definition>
+        <argsstring>()</argsstring>
+        <name>GetCenterTile</name>
+        <briefdescription>
+<para>Get the center tile, or as close to it as we can </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference the center-most tile</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="67" column="19" bodyfile="GridSystem.cpp" bodystart="101" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a2a264351bc2e47da4e0ea2f345dba302" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API <ref refid="classslth_1_1_grid_tile" kindref="compound">slth::GridTile</ref> &amp;</type>
+        <definition>slth::GridTile &amp; slth::GridSystem::GetTile</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>GetTile</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Grabs the tile at position (x, y), returns nullptr if there isn&apos;t one </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="75" column="25" bodyfile="GridSystem.cpp" bodystart="109" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a254500a5f0f81ecb9b6d04365393639a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API <ref refid="classslth_1_1_grid_tile" kindref="compound">slth::GridTile</ref> &amp;</type>
+        <definition>slth::GridTile &amp; slth::GridSystem::GetTile</definition>
+        <argsstring>(const size_t index)</argsstring>
+        <name>GetTile</name>
+        <param>
+          <type>const size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Gets the tile at the specified index </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the tile you want</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Refernce to the tile if one exists, InvalidTile if one does not</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="82" column="25" bodyfile="GridSystem.cpp" bodystart="119" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1af242cdbe4a5ce6da42737dd14d035247" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API Vector2f</type>
+        <definition>slth::Vector2f slth::GridSystem::GetScreenPositionFromTile</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>GetScreenPositionFromTile</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Get the screen position of the tile at (x, y) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="90" column="19" bodyfile="GridSystem.cpp" bodystart="131" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a98740ba7652b3328acc5060eb8d7a9c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API Vector2f</type>
+        <definition>slth::Vector2f slth::GridSystem::GetScreenPositionFromTile</definition>
+        <argsstring>(slth::Vector2f vec)</argsstring>
+        <name>GetScreenPositionFromTile</name>
+        <param>
+          <type>slth::Vector2f</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Get the screen position of the tile at (x, y) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="98" column="19" bodyfile="GridSystem.cpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a8398a1627b7616894691c5e5f69457c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API <ref refid="classslth_1_1_grid_tile" kindref="compound">GridTile</ref> &amp;</type>
+        <definition>slth::GridTile &amp; slth::GridSystem::GetTileAtScreenPosition</definition>
+        <argsstring>(Vector2f pos)</argsstring>
+        <name>GetTileAtScreenPosition</name>
+        <param>
+          <type>Vector2f</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Get tile at screen position </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="105" column="19" bodyfile="GridSystem.cpp" bodystart="144" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1aa46af1512f3d98f005a230241efd6a3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API RectInt</type>
+        <definition>slth::RectInt slth::GridSystem::GetRect</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>GetRect</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Gets the draw rect of the grid system </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="113" column="18" bodyfile="GridSystem.cpp" bodystart="159" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a347eebc770876d3096413b3a4e4de53d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>void slth::GridSystem::PaintTiles</definition>
+        <argsstring>(int startX, int startY, Color color, float weight, int endX=-1, int endY=-1, u32 identifier=0, u32 type=0)</argsstring>
+        <name>PaintTiles</name>
+        <param>
+          <type>int</type>
+          <declname>startX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>startY</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>endX</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>endY</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>identifier</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>type</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Paint the tiles in a XXYY range, or just a single tile if endpoint is not supplied </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>startX</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startY</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endX</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endY</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>identifier</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="126" column="15" bodyfile="GridSystem.cpp" bodystart="170" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1af2ecd51db70a4ba6db34a5f53228f7ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>void slth::GridSystem::Draw</definition>
+        <argsstring>(slth::IGraphics *pGraphics)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>slth::IGraphics *</type>
+          <declname>pGraphics</declname>
+        </param>
+        <briefdescription>
+<para>Render the grid on screen </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pGraphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the graphics object</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="132" column="15" bodyfile="GridSystem.cpp" bodystart="200" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1ab6d9960a53447ea1c9fba11b7d8296b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API bool</type>
+        <definition>bool slth::GridSystem::FindPathAStar</definition>
+        <argsstring>(size_t startIndex, size_t destIndex, GridPath &amp;pathBack, long long timeAllowed)</argsstring>
+        <name>FindPathAStar</name>
+        <param>
+          <type>size_t</type>
+          <declname>startIndex</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>destIndex</declname>
+        </param>
+        <param>
+          <type>GridPath &amp;</type>
+          <declname>pathBack</declname>
+        </param>
+        <param>
+          <type>long long</type>
+          <declname>timeAllowed</declname>
+        </param>
+        <briefdescription>
+<para>Finds the shortest path between two tiles using the A* algorithm </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>startIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Staring tile index</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ending tile index</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A vector of tile indexes in order if a path is found; An empty vector if no path can be found</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="141" column="15" bodyfile="GridSystem.cpp" bodystart="266" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1acd84287607d7ea91c71a2825806e3ee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API bool</type>
+        <definition>bool slth::GridSystem::Resume</definition>
+        <argsstring>(GridPath &amp;pathBack, long long timeAllowed)</argsstring>
+        <name>Resume</name>
+        <param>
+          <type>GridPath &amp;</type>
+          <declname>pathBack</declname>
+        </param>
+        <param>
+          <type>long long</type>
+          <declname>timeAllowed</declname>
+        </param>
+        <briefdescription>
+<para>Resume path in progress </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="147" column="15" bodyfile="GridSystem.cpp" bodystart="447" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a5d58482ec8be4a067b32601bb989d8e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>void slth::GridSystem::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+<para>Resets the search data on the grid so that it can be pathed again </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="152" column="15" bodyfile="GridSystem.cpp" bodystart="452" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1ab145cad1a642332836537bdf9291dc12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>void slth::GridSystem::OutputGridData</definition>
+        <argsstring>()</argsstring>
+        <name>OutputGridData</name>
+        <briefdescription>
+<para>Dumps the current grid data to screen (or maybe XML file in the future) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="158" column="15" bodyfile="GridSystem.cpp" bodystart="470" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a0f340049a2a460736d27ab074e1b5497" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API std::vector&lt; <ref refid="classslth_1_1_grid_tile" kindref="compound">GridTile</ref> &gt; &amp;</type>
+        <definition>SLTH_API std::vector&lt;GridTile&gt;&amp; slth::GridSystem::GetTiles</definition>
+        <argsstring>()</argsstring>
+        <name>GetTiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="205" column="22" bodyfile="GridSystem.h" bodystart="205" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a48f53d29091a7bf27734f3a8e8062a34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API Vector2f</type>
+        <definition>SLTH_API Vector2f slth::GridSystem::GetSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="207" column="19" bodyfile="GridSystem.h" bodystart="207" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1ad93aba1b221ccd49099a2d67a0fdfc12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API Color</type>
+        <definition>SLTH_API Color slth::GridSystem::GetBackgroundColor</definition>
+        <argsstring>()</argsstring>
+        <name>GetBackgroundColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="209" column="16" bodyfile="GridSystem.h" bodystart="209" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a9aa865a9cb2cf9a9c6dbb46aeab69647" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>SLTH_API void slth::GridSystem::SetBackgroundColor</definition>
+        <argsstring>(Color color)</argsstring>
+        <name>SetBackgroundColor</name>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="211" column="15" bodyfile="GridSystem.h" bodystart="211" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a791f8e2486e83b44d9b251504426fe86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API <ref refid="classslth_1_1_grid_tile" kindref="compound">GridTile</ref> &amp;</type>
+        <definition>SLTH_API GridTile&amp; slth::GridSystem::InvalidTile</definition>
+        <argsstring>()</argsstring>
+        <name>InvalidTile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="213" column="19" bodyfile="GridSystem.h" bodystart="213" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1aacfe97a16b8431c8753d2edf85e68368" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API bool</type>
+        <definition>SLTH_API bool slth::GridSystem::IsPathInProgress</definition>
+        <argsstring>()</argsstring>
+        <name>IsPathInProgress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="215" column="15" bodyfile="GridSystem.h" bodystart="215" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a160876c1c67a212f7f60be3a17107c20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API bool</type>
+        <definition>SLTH_API bool slth::GridSystem::GetWeightOnlyMode</definition>
+        <argsstring>()</argsstring>
+        <name>GetWeightOnlyMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="217" column="15" bodyfile="GridSystem.h" bodystart="217" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1aaf788718169c162ef8e472a23bac9315" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>SLTH_API void slth::GridSystem::SetWeightOnlyMode</definition>
+        <argsstring>(bool val)</argsstring>
+        <name>SetWeightOnlyMode</name>
+        <param>
+          <type>bool</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="219" column="15" bodyfile="GridSystem.h" bodystart="219" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1aa923bdb896c8c9b1dde6c8072720a141" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SLTH_API void</type>
+        <definition>SLTH_API void slth::GridSystem::ToggleWeightMode</definition>
+        <argsstring>()</argsstring>
+        <name>ToggleWeightMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="221" column="15" bodyfile="GridSystem.h" bodystart="221" bodyend="221"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a6db28bf061bc9e1718cd69479af4c960" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool slth::GridSystem::PathAStarInternal</definition>
+        <argsstring>(GridPath &amp;pathBack, long long timeAllowed)</argsstring>
+        <name>PathAStarInternal</name>
+        <param>
+          <type>GridPath &amp;</type>
+          <declname>pathBack</declname>
+        </param>
+        <param>
+          <type>long long</type>
+          <declname>timeAllowed</declname>
+        </param>
+        <briefdescription>
+<para>Internal version of A* (contains the actual algorithm). This is necssary for time-slicing the pathing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pathBack</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeAllowed</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="193" column="6" bodyfile="GridSystem.cpp" bodystart="315" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="classslth_1_1_grid_system_1a19e92a2cc7b5b30d1974e21e25de57bf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void slth::GridSystem::CreateTiles</definition>
+        <argsstring>()</argsstring>
+        <name>CreateTiles</name>
+        <briefdescription>
+<para>Creates tiles based on the data collected in <ref refid="classslth_1_1_grid_system_1a8a5c4ced64fe2b4a874d9564b04ba3a1" kindref="member">Init()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="198" column="6" bodyfile="GridSystem.cpp" bodystart="431" bodyend="445"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Serves as a tile-based graph for drawing on screen, and finding things like best path. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="GridSystem.h" line="38" column="1" bodyfile="GridSystem.h" bodystart="37" bodyend="223"/>
+    <listofallmembers>
+      <member refid="classslth_1_1_grid_system_1a19e92a2cc7b5b30d1974e21e25de57bf" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>CreateTiles</name></member>
+      <member refid="classslth_1_1_grid_system_1af2ecd51db70a4ba6db34a5f53228f7ac" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>Draw</name></member>
+      <member refid="classslth_1_1_grid_system_1ab6d9960a53447ea1c9fba11b7d8296b5" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>FindPathAStar</name></member>
+      <member refid="classslth_1_1_grid_system_1ad93aba1b221ccd49099a2d67a0fdfc12" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>GetBackgroundColor</name></member>
+      <member refid="classslth_1_1_grid_system_1a569daac03e381899b3058629cee8d4bb" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>GetCenterTile</name></member>
+      <member refid="classslth_1_1_grid_system_1aa46af1512f3d98f005a230241efd6a3c" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>GetRect</name></member>
+      <member refid="classslth_1_1_grid_system_1af242cdbe4a5ce6da42737dd14d035247" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>GetScreenPositionFromTile</name></member>
+      <member refid="classslth_1_1_grid_system_1a98740ba7652b3328acc5060eb8d7a9c2" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>GetScreenPositionFromTile</name></member>
+      <member refid="classslth_1_1_grid_system_1a48f53d29091a7bf27734f3a8e8062a34" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>GetSize</name></member>
+      <member refid="classslth_1_1_grid_system_1a2a264351bc2e47da4e0ea2f345dba302" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>GetTile</name></member>
+      <member refid="classslth_1_1_grid_system_1a254500a5f0f81ecb9b6d04365393639a" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>GetTile</name></member>
+      <member refid="classslth_1_1_grid_system_1a8398a1627b7616894691c5e5f69457c5" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>GetTileAtScreenPosition</name></member>
+      <member refid="classslth_1_1_grid_system_1a0f340049a2a460736d27ab074e1b5497" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>GetTiles</name></member>
+      <member refid="classslth_1_1_grid_system_1a160876c1c67a212f7f60be3a17107c20" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>GetWeightOnlyMode</name></member>
+      <member refid="classslth_1_1_grid_system_1a8e9a188573e4f7e8528cb8fa6031579a" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>GridSystem</name></member>
+      <member refid="classslth_1_1_grid_system_1a8a5c4ced64fe2b4a874d9564b04ba3a1" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>Init</name></member>
+      <member refid="classslth_1_1_grid_system_1a883f5bf85737222364d3649e0c2ff152" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>Init</name></member>
+      <member refid="classslth_1_1_grid_system_1a791f8e2486e83b44d9b251504426fe86" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>InvalidTile</name></member>
+      <member refid="classslth_1_1_grid_system_1aacfe97a16b8431c8753d2edf85e68368" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>IsPathInProgress</name></member>
+      <member refid="classslth_1_1_grid_system_1a9b728e7cfffb806855560cf0c31296b3" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>kDiagonalWeight</name></member>
+      <member refid="classslth_1_1_grid_system_1ad618d46e69d0d703ec8438292f0ef170" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>kImpassibleWeight</name></member>
+      <member refid="classslth_1_1_grid_system_1ae8f315581c3268dd6f748272d33b0aa2" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_backgroundColor</name></member>
+      <member refid="classslth_1_1_grid_system_1ac77e6b006a81662b78c01a8055d89c92" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_getClose</name></member>
+      <member refid="classslth_1_1_grid_system_1afaccc6aa164ccafe9906bbfd35cfabf5" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_hidden</name></member>
+      <member refid="classslth_1_1_grid_system_1a2f8ea44ce65847b28daeb26360bf2333" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_invalidTile</name></member>
+      <member refid="classslth_1_1_grid_system_1aa264da948d8c839fda9f667aac06c7f4" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_openSet</name></member>
+      <member refid="classslth_1_1_grid_system_1a0653474caa41a3e870b798110739c095" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_pathEndIndex</name></member>
+      <member refid="classslth_1_1_grid_system_1a74b40cec2aaf5586fdee8ad034cd5491" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_pathInProgress</name></member>
+      <member refid="classslth_1_1_grid_system_1a453540272e689d7b6fe57bc550fc1fd0" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_pathStartIndex</name></member>
+      <member refid="classslth_1_1_grid_system_1a40b4a4f529900ee1f4785790777a8d4f" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_pCurrentNode</name></member>
+      <member refid="classslth_1_1_grid_system_1a34fa379a85bf7a06daab6ce968587006" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_position</name></member>
+      <member refid="classslth_1_1_grid_system_1ae85ad9fb37effa3f96780156d207cede" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_size</name></member>
+      <member refid="classslth_1_1_grid_system_1a4b06780f9f1bcd4d25652e8d61aa2110" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_tiles</name></member>
+      <member refid="classslth_1_1_grid_system_1aee5714a2e18d404c6d40a313ca8f4646" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_tileSize</name></member>
+      <member refid="classslth_1_1_grid_system_1ae87c941a209003faa13643e49f2fafb9" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_tileSpacing</name></member>
+      <member refid="classslth_1_1_grid_system_1a91ef2c74e832e9be18407e167f52bf7b" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>m_useWeightOnly</name></member>
+      <member refid="classslth_1_1_grid_system_1ab145cad1a642332836537bdf9291dc12" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>OutputGridData</name></member>
+      <member refid="classslth_1_1_grid_system_1a347eebc770876d3096413b3a4e4de53d" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>PaintTiles</name></member>
+      <member refid="classslth_1_1_grid_system_1a6db28bf061bc9e1718cd69479af4c960" prot="private" virt="non-virtual"><scope>slth::GridSystem</scope><name>PathAStarInternal</name></member>
+      <member refid="classslth_1_1_grid_system_1a5d58482ec8be4a067b32601bb989d8e2" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>Reset</name></member>
+      <member refid="classslth_1_1_grid_system_1acd84287607d7ea91c71a2825806e3ee8" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>Resume</name></member>
+      <member refid="classslth_1_1_grid_system_1a9aa865a9cb2cf9a9c6dbb46aeab69647" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>SetBackgroundColor</name></member>
+      <member refid="classslth_1_1_grid_system_1aaf788718169c162ef8e472a23bac9315" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>SetWeightOnlyMode</name></member>
+      <member refid="classslth_1_1_grid_system_1aa923bdb896c8c9b1dde6c8072720a141" prot="public" virt="non-virtual"><scope>slth::GridSystem</scope><name>ToggleWeightMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

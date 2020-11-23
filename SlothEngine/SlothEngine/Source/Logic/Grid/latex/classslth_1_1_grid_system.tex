@@ -1,0 +1,374 @@
+\hypertarget{classslth_1_1_grid_system}{}\doxysection{slth\+::Grid\+System Class Reference}
+\label{classslth_1_1_grid_system}\index{slth::GridSystem@{slth::GridSystem}}
+
+
+Serves as a tile-\/based graph for drawing on screen, and finding things like best path.  
+
+
+
+
+{\ttfamily \#include $<$Grid\+System.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+S\+L\+T\+H\+\_\+\+A\+PI \mbox{\hyperlink{classslth_1_1_grid_system_a8e9a188573e4f7e8528cb8fa6031579a}{Grid\+System}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI bool \mbox{\hyperlink{classslth_1_1_grid_system_a8a5c4ced64fe2b4a874d9564b04ba3a1}{Init}} (slth\+::\+Vector2f size, slth\+::\+Vector2f position, slth\+::\+Vector2f tile\+Size, float tile\+Spacing)
+\begin{DoxyCompactList}\small\item\em Initialze the grid from supplied data \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI void \mbox{\hyperlink{classslth_1_1_grid_system_a883f5bf85737222364d3649e0c2ff152}{Init}} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Inisitalize the grid from an X\+ML file \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI \mbox{\hyperlink{classslth_1_1_grid_tile}{Grid\+Tile}} \& \mbox{\hyperlink{classslth_1_1_grid_system_a569daac03e381899b3058629cee8d4bb}{Get\+Center\+Tile}} ()
+\begin{DoxyCompactList}\small\item\em Get the center tile, or as close to it as we can \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI \mbox{\hyperlink{classslth_1_1_grid_tile}{slth\+::\+Grid\+Tile}} \& \mbox{\hyperlink{classslth_1_1_grid_system_a2a264351bc2e47da4e0ea2f345dba302}{Get\+Tile}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Grabs the tile at position (x, y), returns nullptr if there isn\textquotesingle{}t one \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI \mbox{\hyperlink{classslth_1_1_grid_tile}{slth\+::\+Grid\+Tile}} \& \mbox{\hyperlink{classslth_1_1_grid_system_a254500a5f0f81ecb9b6d04365393639a}{Get\+Tile}} (const size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Gets the tile at the specified index \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI Vector2f \mbox{\hyperlink{classslth_1_1_grid_system_af242cdbe4a5ce6da42737dd14d035247}{Get\+Screen\+Position\+From\+Tile}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Get the screen position of the tile at (x, y) \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI Vector2f \mbox{\hyperlink{classslth_1_1_grid_system_a98740ba7652b3328acc5060eb8d7a9c2}{Get\+Screen\+Position\+From\+Tile}} (slth\+::\+Vector2f vec)
+\begin{DoxyCompactList}\small\item\em Get the screen position of the tile at (x, y) \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI \mbox{\hyperlink{classslth_1_1_grid_tile}{Grid\+Tile}} \& \mbox{\hyperlink{classslth_1_1_grid_system_a8398a1627b7616894691c5e5f69457c5}{Get\+Tile\+At\+Screen\+Position}} (Vector2f pos)
+\begin{DoxyCompactList}\small\item\em Get tile at screen position \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI Rect\+Int \mbox{\hyperlink{classslth_1_1_grid_system_aa46af1512f3d98f005a230241efd6a3c}{Get\+Rect}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Gets the draw rect of the grid system \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI void \mbox{\hyperlink{classslth_1_1_grid_system_a347eebc770876d3096413b3a4e4de53d}{Paint\+Tiles}} (int startX, int startY, Color color, float weight, int endX=-\/1, int endY=-\/1, u32 identifier=0, u32 type=0)
+\begin{DoxyCompactList}\small\item\em Paint the tiles in a X\+X\+YY range, or just a single tile if endpoint is not supplied \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI void \mbox{\hyperlink{classslth_1_1_grid_system_af2ecd51db70a4ba6db34a5f53228f7ac}{Draw}} (slth\+::\+I\+Graphics $\ast$p\+Graphics)
+\begin{DoxyCompactList}\small\item\em Render the grid on screen \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI bool \mbox{\hyperlink{classslth_1_1_grid_system_ab6d9960a53447ea1c9fba11b7d8296b5}{Find\+Path\+A\+Star}} (size\+\_\+t start\+Index, size\+\_\+t dest\+Index, Grid\+Path \&path\+Back, long long time\+Allowed)
+\begin{DoxyCompactList}\small\item\em Finds the shortest path between two tiles using the A$\ast$ algorithm \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI bool \mbox{\hyperlink{classslth_1_1_grid_system_acd84287607d7ea91c71a2825806e3ee8}{Resume}} (Grid\+Path \&path\+Back, long long time\+Allowed)
+\begin{DoxyCompactList}\small\item\em Resume path in progress \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI void \mbox{\hyperlink{classslth_1_1_grid_system_a5d58482ec8be4a067b32601bb989d8e2}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Resets the search data on the grid so that it can be pathed again \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI void \mbox{\hyperlink{classslth_1_1_grid_system_ab145cad1a642332836537bdf9291dc12}{Output\+Grid\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Dumps the current grid data to screen (or maybe X\+ML file in the future) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classslth_1_1_grid_system_a0f340049a2a460736d27ab074e1b5497}\label{classslth_1_1_grid_system_a0f340049a2a460736d27ab074e1b5497}} 
+S\+L\+T\+H\+\_\+\+A\+PI std\+::vector$<$ \mbox{\hyperlink{classslth_1_1_grid_tile}{Grid\+Tile}} $>$ \& {\bfseries Get\+Tiles} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_system_a48f53d29091a7bf27734f3a8e8062a34}\label{classslth_1_1_grid_system_a48f53d29091a7bf27734f3a8e8062a34}} 
+S\+L\+T\+H\+\_\+\+A\+PI Vector2f {\bfseries Get\+Size} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_system_ad93aba1b221ccd49099a2d67a0fdfc12}\label{classslth_1_1_grid_system_ad93aba1b221ccd49099a2d67a0fdfc12}} 
+S\+L\+T\+H\+\_\+\+A\+PI Color {\bfseries Get\+Background\+Color} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_system_a9aa865a9cb2cf9a9c6dbb46aeab69647}\label{classslth_1_1_grid_system_a9aa865a9cb2cf9a9c6dbb46aeab69647}} 
+S\+L\+T\+H\+\_\+\+A\+PI void {\bfseries Set\+Background\+Color} (Color color)
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_system_a791f8e2486e83b44d9b251504426fe86}\label{classslth_1_1_grid_system_a791f8e2486e83b44d9b251504426fe86}} 
+S\+L\+T\+H\+\_\+\+A\+PI \mbox{\hyperlink{classslth_1_1_grid_tile}{Grid\+Tile}} \& {\bfseries Invalid\+Tile} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_system_aacfe97a16b8431c8753d2edf85e68368}\label{classslth_1_1_grid_system_aacfe97a16b8431c8753d2edf85e68368}} 
+S\+L\+T\+H\+\_\+\+A\+PI bool {\bfseries Is\+Path\+In\+Progress} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_system_a160876c1c67a212f7f60be3a17107c20}\label{classslth_1_1_grid_system_a160876c1c67a212f7f60be3a17107c20}} 
+S\+L\+T\+H\+\_\+\+A\+PI bool {\bfseries Get\+Weight\+Only\+Mode} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_system_aaf788718169c162ef8e472a23bac9315}\label{classslth_1_1_grid_system_aaf788718169c162ef8e472a23bac9315}} 
+S\+L\+T\+H\+\_\+\+A\+PI void {\bfseries Set\+Weight\+Only\+Mode} (bool val)
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_system_aa923bdb896c8c9b1dde6c8072720a141}\label{classslth_1_1_grid_system_aa923bdb896c8c9b1dde6c8072720a141}} 
+S\+L\+T\+H\+\_\+\+A\+PI void {\bfseries Toggle\+Weight\+Mode} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_system_ad618d46e69d0d703ec8438292f0ef170}\label{classslth_1_1_grid_system_ad618d46e69d0d703ec8438292f0ef170}} 
+static constexpr float {\bfseries k\+Impassible\+Weight} = 10.f
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_system_a9b728e7cfffb806855560cf0c31296b3}\label{classslth_1_1_grid_system_a9b728e7cfffb806855560cf0c31296b3}} 
+static constexpr float {\bfseries k\+Diagonal\+Weight} = 1.\+7f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Serves as a tile-\/based graph for drawing on screen, and finding things like best path. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classslth_1_1_grid_system_a8e9a188573e4f7e8528cb8fa6031579a}\label{classslth_1_1_grid_system_a8e9a188573e4f7e8528cb8fa6031579a}} 
+\index{slth::GridSystem@{slth::GridSystem}!GridSystem@{GridSystem}}
+\index{GridSystem@{GridSystem}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{GridSystem()}{GridSystem()}}
+{\footnotesize\ttfamily Grid\+System\+::\+Grid\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classslth_1_1_grid_system_af2ecd51db70a4ba6db34a5f53228f7ac}\label{classslth_1_1_grid_system_af2ecd51db70a4ba6db34a5f53228f7ac}} 
+\index{slth::GridSystem@{slth::GridSystem}!Draw@{Draw}}
+\index{Draw@{Draw}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void slth\+::\+Grid\+System\+::\+Draw (\begin{DoxyParamCaption}\item[{slth\+::\+I\+Graphics $\ast$}]{p\+Graphics }\end{DoxyParamCaption})}
+
+
+
+Render the grid on screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Graphics} & A pointer to the graphics object\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classslth_1_1_grid_system_ab6d9960a53447ea1c9fba11b7d8296b5}\label{classslth_1_1_grid_system_ab6d9960a53447ea1c9fba11b7d8296b5}} 
+\index{slth::GridSystem@{slth::GridSystem}!FindPathAStar@{FindPathAStar}}
+\index{FindPathAStar@{FindPathAStar}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{FindPathAStar()}{FindPathAStar()}}
+{\footnotesize\ttfamily bool slth\+::\+Grid\+System\+::\+Find\+Path\+A\+Star (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{start\+Index,  }\item[{size\+\_\+t}]{dest\+Index,  }\item[{Grid\+Path \&}]{path\+Back,  }\item[{long long}]{time\+Allowed }\end{DoxyParamCaption})}
+
+
+
+Finds the shortest path between two tiles using the A$\ast$ algorithm 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Index} & Staring tile index\\
+\hline
+{\em dest\+Index} & Ending tile index\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of tile indexes in order if a path is found; An empty vector if no path can be found
+\end{DoxyReturn}
+\mbox{\Hypertarget{classslth_1_1_grid_system_a569daac03e381899b3058629cee8d4bb}\label{classslth_1_1_grid_system_a569daac03e381899b3058629cee8d4bb}} 
+\index{slth::GridSystem@{slth::GridSystem}!GetCenterTile@{GetCenterTile}}
+\index{GetCenterTile@{GetCenterTile}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{GetCenterTile()}{GetCenterTile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classslth_1_1_grid_tile}{slth\+::\+Grid\+Tile}} \& slth\+::\+Grid\+System\+::\+Get\+Center\+Tile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the center tile, or as close to it as we can 
+
+\begin{DoxyReturn}{Returns}
+Reference the center-\/most tile
+\end{DoxyReturn}
+\mbox{\Hypertarget{classslth_1_1_grid_system_aa46af1512f3d98f005a230241efd6a3c}\label{classslth_1_1_grid_system_aa46af1512f3d98f005a230241efd6a3c}} 
+\index{slth::GridSystem@{slth::GridSystem}!GetRect@{GetRect}}
+\index{GetRect@{GetRect}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{GetRect()}{GetRect()}}
+{\footnotesize\ttfamily slth\+::\+Rect\+Int slth\+::\+Grid\+System\+::\+Get\+Rect (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Gets the draw rect of the grid system 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classslth_1_1_grid_system_af242cdbe4a5ce6da42737dd14d035247}\label{classslth_1_1_grid_system_af242cdbe4a5ce6da42737dd14d035247}} 
+\index{slth::GridSystem@{slth::GridSystem}!GetScreenPositionFromTile@{GetScreenPositionFromTile}}
+\index{GetScreenPositionFromTile@{GetScreenPositionFromTile}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{GetScreenPositionFromTile()}{GetScreenPositionFromTile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily slth\+::\+Vector2f slth\+::\+Grid\+System\+::\+Get\+Screen\+Position\+From\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Get the screen position of the tile at (x, y) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classslth_1_1_grid_system_a98740ba7652b3328acc5060eb8d7a9c2}\label{classslth_1_1_grid_system_a98740ba7652b3328acc5060eb8d7a9c2}} 
+\index{slth::GridSystem@{slth::GridSystem}!GetScreenPositionFromTile@{GetScreenPositionFromTile}}
+\index{GetScreenPositionFromTile@{GetScreenPositionFromTile}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{GetScreenPositionFromTile()}{GetScreenPositionFromTile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily slth\+::\+Vector2f slth\+::\+Grid\+System\+::\+Get\+Screen\+Position\+From\+Tile (\begin{DoxyParamCaption}\item[{slth\+::\+Vector2f}]{vec }\end{DoxyParamCaption})}
+
+
+
+Get the screen position of the tile at (x, y) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classslth_1_1_grid_system_a254500a5f0f81ecb9b6d04365393639a}\label{classslth_1_1_grid_system_a254500a5f0f81ecb9b6d04365393639a}} 
+\index{slth::GridSystem@{slth::GridSystem}!GetTile@{GetTile}}
+\index{GetTile@{GetTile}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{GetTile()}{GetTile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classslth_1_1_grid_tile}{slth\+::\+Grid\+Tile}} \& slth\+::\+Grid\+System\+::\+Get\+Tile (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Gets the tile at the specified index 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the tile you want\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Refernce to the tile if one exists, Invalid\+Tile if one does not
+\end{DoxyReturn}
+\mbox{\Hypertarget{classslth_1_1_grid_system_a2a264351bc2e47da4e0ea2f345dba302}\label{classslth_1_1_grid_system_a2a264351bc2e47da4e0ea2f345dba302}} 
+\index{slth::GridSystem@{slth::GridSystem}!GetTile@{GetTile}}
+\index{GetTile@{GetTile}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{GetTile()}{GetTile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classslth_1_1_grid_tile}{slth\+::\+Grid\+Tile}} \& slth\+::\+Grid\+System\+::\+Get\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Grabs the tile at position (x, y), returns nullptr if there isn\textquotesingle{}t one 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classslth_1_1_grid_system_a8398a1627b7616894691c5e5f69457c5}\label{classslth_1_1_grid_system_a8398a1627b7616894691c5e5f69457c5}} 
+\index{slth::GridSystem@{slth::GridSystem}!GetTileAtScreenPosition@{GetTileAtScreenPosition}}
+\index{GetTileAtScreenPosition@{GetTileAtScreenPosition}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{GetTileAtScreenPosition()}{GetTileAtScreenPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classslth_1_1_grid_tile}{slth\+::\+Grid\+Tile}} \& slth\+::\+Grid\+System\+::\+Get\+Tile\+At\+Screen\+Position (\begin{DoxyParamCaption}\item[{Vector2f}]{pos }\end{DoxyParamCaption})}
+
+
+
+Get tile at screen position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classslth_1_1_grid_system_a883f5bf85737222364d3649e0c2ff152}\label{classslth_1_1_grid_system_a883f5bf85737222364d3649e0c2ff152}} 
+\index{slth::GridSystem@{slth::GridSystem}!Init@{Init}}
+\index{Init@{Init}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void slth\+::\+Grid\+System\+::\+Init (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Inisitalize the grid from an X\+ML file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classslth_1_1_grid_system_a8a5c4ced64fe2b4a874d9564b04ba3a1}\label{classslth_1_1_grid_system_a8a5c4ced64fe2b4a874d9564b04ba3a1}} 
+\index{slth::GridSystem@{slth::GridSystem}!Init@{Init}}
+\index{Init@{Init}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool slth\+::\+Grid\+System\+::\+Init (\begin{DoxyParamCaption}\item[{slth\+::\+Vector2f}]{size,  }\item[{slth\+::\+Vector2f}]{position,  }\item[{slth\+::\+Vector2f}]{tile\+Size,  }\item[{float}]{tile\+Spacing }\end{DoxyParamCaption})}
+
+
+
+Initialze the grid from supplied data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+{\em position} & \\
+\hline
+{\em tile\+Size} & \\
+\hline
+{\em tile\+Spacing} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classslth_1_1_grid_system_ab145cad1a642332836537bdf9291dc12}\label{classslth_1_1_grid_system_ab145cad1a642332836537bdf9291dc12}} 
+\index{slth::GridSystem@{slth::GridSystem}!OutputGridData@{OutputGridData}}
+\index{OutputGridData@{OutputGridData}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{OutputGridData()}{OutputGridData()}}
+{\footnotesize\ttfamily void slth\+::\+Grid\+System\+::\+Output\+Grid\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dumps the current grid data to screen (or maybe X\+ML file in the future) 
+
+\mbox{\Hypertarget{classslth_1_1_grid_system_a347eebc770876d3096413b3a4e4de53d}\label{classslth_1_1_grid_system_a347eebc770876d3096413b3a4e4de53d}} 
+\index{slth::GridSystem@{slth::GridSystem}!PaintTiles@{PaintTiles}}
+\index{PaintTiles@{PaintTiles}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{PaintTiles()}{PaintTiles()}}
+{\footnotesize\ttfamily void slth\+::\+Grid\+System\+::\+Paint\+Tiles (\begin{DoxyParamCaption}\item[{int}]{startX,  }\item[{int}]{startY,  }\item[{Color}]{color,  }\item[{float}]{weight,  }\item[{int}]{endX = {\ttfamily -\/1},  }\item[{int}]{endY = {\ttfamily -\/1},  }\item[{u32}]{identifier = {\ttfamily 0},  }\item[{u32}]{type = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Paint the tiles in a X\+X\+YY range, or just a single tile if endpoint is not supplied 
+
+
+\begin{DoxyParams}{Parameters}
+{\em startX} & \\
+\hline
+{\em startY} & \\
+\hline
+{\em color} & \\
+\hline
+{\em weight} & \\
+\hline
+{\em endX} & \\
+\hline
+{\em endY} & \\
+\hline
+{\em identifier} & \\
+\hline
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classslth_1_1_grid_system_a5d58482ec8be4a067b32601bb989d8e2}\label{classslth_1_1_grid_system_a5d58482ec8be4a067b32601bb989d8e2}} 
+\index{slth::GridSystem@{slth::GridSystem}!Reset@{Reset}}
+\index{Reset@{Reset}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void slth\+::\+Grid\+System\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the search data on the grid so that it can be pathed again 
+
+\mbox{\Hypertarget{classslth_1_1_grid_system_acd84287607d7ea91c71a2825806e3ee8}\label{classslth_1_1_grid_system_acd84287607d7ea91c71a2825806e3ee8}} 
+\index{slth::GridSystem@{slth::GridSystem}!Resume@{Resume}}
+\index{Resume@{Resume}!slth::GridSystem@{slth::GridSystem}}
+\doxysubsubsection{\texorpdfstring{Resume()}{Resume()}}
+{\footnotesize\ttfamily bool slth\+::\+Grid\+System\+::\+Resume (\begin{DoxyParamCaption}\item[{Grid\+Path \&}]{path\+Back,  }\item[{long long}]{time\+Allowed }\end{DoxyParamCaption})}
+
+
+
+Resume path in progress 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_grid_system_8h}{Grid\+System.\+h}}\item 
+Grid\+System.\+cpp\end{DoxyCompactItemize}

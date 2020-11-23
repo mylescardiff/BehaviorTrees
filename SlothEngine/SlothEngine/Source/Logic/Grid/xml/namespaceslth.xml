@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceslth" kind="namespace" language="C++">
+    <compoundname>slth</compoundname>
+    <innerclass refid="classslth_1_1_grid_system" prot="public">slth::GridSystem</innerclass>
+    <innerclass refid="classslth_1_1_grid_tile" prot="public">slth::GridTile</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_grid_system_8h_1a217071fe91b2ebcd0f4110d10fdb1128" prot="public" static="no">
+        <type>std::priority_queue&lt; <ref refid="classslth_1_1_grid_tile" kindref="compound">GridTile</ref> *, std::vector&lt; <ref refid="classslth_1_1_grid_tile" kindref="compound">GridTile</ref> * &gt;, decltype(nodePriorityFunc)&gt;</type>
+        <definition>typedef std::priority_queue&lt;GridTile*, std::vector&lt;GridTile*&gt;, decltype(nodePriorityFunc)&gt; slth::OpenSet</definition>
+        <argsstring></argsstring>
+        <name>OpenSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="29" column="29" bodyfile="GridSystem.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_grid_system_8h_1a975df20c81447987c560966959e6b837" prot="public" static="no">
+        <type>std::vector&lt; Vector2f &gt;</type>
+        <definition>typedef std::vector&lt;Vector2f&gt; slth::GridPath</definition>
+        <argsstring></argsstring>
+        <name>GridPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="30" column="21" bodyfile="GridSystem.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_grid_system_8h_1abc1de2b38f46f28673c6bd70eb822258" prot="public" static="no" mutable="no">
+        <type>auto</type>
+        <definition>auto slth::nodePriorityFunc</definition>
+        <argsstring></argsstring>
+        <name>nodePriorityFunc</name>
+        <initializer>= [](<ref refid="classslth_1_1_grid_tile" kindref="compound">GridTile</ref>* pLeft, <ref refid="classslth_1_1_grid_tile" kindref="compound">GridTile</ref>* pRight)
+	{
+		return pLeft-&gt;GetFScore() &gt; pRight-&gt;GetFScore();
+	}</initializer>
+        <briefdescription>
+<para>Priority ordering function for the A* (see PathAStarInternal) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GridSystem.h" line="24" column="6" bodyfile="GridSystem.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="GridSystem.h" line="16" column="1"/>
+  </compounddef>
+</doxygen>

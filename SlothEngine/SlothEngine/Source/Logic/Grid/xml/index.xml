@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="classslth_1_1_grid_system" kind="class"><name>slth::GridSystem</name>
+    <member refid="classslth_1_1_grid_system_1ad618d46e69d0d703ec8438292f0ef170" kind="variable"><name>kImpassibleWeight</name></member>
+    <member refid="classslth_1_1_grid_system_1a9b728e7cfffb806855560cf0c31296b3" kind="variable"><name>kDiagonalWeight</name></member>
+    <member refid="classslth_1_1_grid_system_1ae85ad9fb37effa3f96780156d207cede" kind="variable"><name>m_size</name></member>
+    <member refid="classslth_1_1_grid_system_1a34fa379a85bf7a06daab6ce968587006" kind="variable"><name>m_position</name></member>
+    <member refid="classslth_1_1_grid_system_1aee5714a2e18d404c6d40a313ca8f4646" kind="variable"><name>m_tileSize</name></member>
+    <member refid="classslth_1_1_grid_system_1ae87c941a209003faa13643e49f2fafb9" kind="variable"><name>m_tileSpacing</name></member>
+    <member refid="classslth_1_1_grid_system_1ae8f315581c3268dd6f748272d33b0aa2" kind="variable"><name>m_backgroundColor</name></member>
+    <member refid="classslth_1_1_grid_system_1a4b06780f9f1bcd4d25652e8d61aa2110" kind="variable"><name>m_tiles</name></member>
+    <member refid="classslth_1_1_grid_system_1a2f8ea44ce65847b28daeb26360bf2333" kind="variable"><name>m_invalidTile</name></member>
+    <member refid="classslth_1_1_grid_system_1afaccc6aa164ccafe9906bbfd35cfabf5" kind="variable"><name>m_hidden</name></member>
+    <member refid="classslth_1_1_grid_system_1aa264da948d8c839fda9f667aac06c7f4" kind="variable"><name>m_openSet</name></member>
+    <member refid="classslth_1_1_grid_system_1a40b4a4f529900ee1f4785790777a8d4f" kind="variable"><name>m_pCurrentNode</name></member>
+    <member refid="classslth_1_1_grid_system_1a74b40cec2aaf5586fdee8ad034cd5491" kind="variable"><name>m_pathInProgress</name></member>
+    <member refid="classslth_1_1_grid_system_1a453540272e689d7b6fe57bc550fc1fd0" kind="variable"><name>m_pathStartIndex</name></member>
+    <member refid="classslth_1_1_grid_system_1a0653474caa41a3e870b798110739c095" kind="variable"><name>m_pathEndIndex</name></member>
+    <member refid="classslth_1_1_grid_system_1a91ef2c74e832e9be18407e167f52bf7b" kind="variable"><name>m_useWeightOnly</name></member>
+    <member refid="classslth_1_1_grid_system_1ac77e6b006a81662b78c01a8055d89c92" kind="variable"><name>m_getClose</name></member>
+    <member refid="classslth_1_1_grid_system_1a8e9a188573e4f7e8528cb8fa6031579a" kind="function"><name>GridSystem</name></member>
+    <member refid="classslth_1_1_grid_system_1a8a5c4ced64fe2b4a874d9564b04ba3a1" kind="function"><name>Init</name></member>
+    <member refid="classslth_1_1_grid_system_1a883f5bf85737222364d3649e0c2ff152" kind="function"><name>Init</name></member>
+    <member refid="classslth_1_1_grid_system_1a569daac03e381899b3058629cee8d4bb" kind="function"><name>GetCenterTile</name></member>
+    <member refid="classslth_1_1_grid_system_1a2a264351bc2e47da4e0ea2f345dba302" kind="function"><name>GetTile</name></member>
+    <member refid="classslth_1_1_grid_system_1a254500a5f0f81ecb9b6d04365393639a" kind="function"><name>GetTile</name></member>
+    <member refid="classslth_1_1_grid_system_1af242cdbe4a5ce6da42737dd14d035247" kind="function"><name>GetScreenPositionFromTile</name></member>
+    <member refid="classslth_1_1_grid_system_1a98740ba7652b3328acc5060eb8d7a9c2" kind="function"><name>GetScreenPositionFromTile</name></member>
+    <member refid="classslth_1_1_grid_system_1a8398a1627b7616894691c5e5f69457c5" kind="function"><name>GetTileAtScreenPosition</name></member>
+    <member refid="classslth_1_1_grid_system_1aa46af1512f3d98f005a230241efd6a3c" kind="function"><name>GetRect</name></member>
+    <member refid="classslth_1_1_grid_system_1a347eebc770876d3096413b3a4e4de53d" kind="function"><name>PaintTiles</name></member>
+    <member refid="classslth_1_1_grid_system_1af2ecd51db70a4ba6db34a5f53228f7ac" kind="function"><name>Draw</name></member>
+    <member refid="classslth_1_1_grid_system_1ab6d9960a53447ea1c9fba11b7d8296b5" kind="function"><name>FindPathAStar</name></member>
+    <member refid="classslth_1_1_grid_system_1acd84287607d7ea91c71a2825806e3ee8" kind="function"><name>Resume</name></member>
+    <member refid="classslth_1_1_grid_system_1a5d58482ec8be4a067b32601bb989d8e2" kind="function"><name>Reset</name></member>
+    <member refid="classslth_1_1_grid_system_1ab145cad1a642332836537bdf9291dc12" kind="function"><name>OutputGridData</name></member>
+    <member refid="classslth_1_1_grid_system_1a0f340049a2a460736d27ab074e1b5497" kind="function"><name>GetTiles</name></member>
+    <member refid="classslth_1_1_grid_system_1a48f53d29091a7bf27734f3a8e8062a34" kind="function"><name>GetSize</name></member>
+    <member refid="classslth_1_1_grid_system_1ad93aba1b221ccd49099a2d67a0fdfc12" kind="function"><name>GetBackgroundColor</name></member>
+    <member refid="classslth_1_1_grid_system_1a9aa865a9cb2cf9a9c6dbb46aeab69647" kind="function"><name>SetBackgroundColor</name></member>
+    <member refid="classslth_1_1_grid_system_1a791f8e2486e83b44d9b251504426fe86" kind="function"><name>InvalidTile</name></member>
+    <member refid="classslth_1_1_grid_system_1aacfe97a16b8431c8753d2edf85e68368" kind="function"><name>IsPathInProgress</name></member>
+    <member refid="classslth_1_1_grid_system_1a160876c1c67a212f7f60be3a17107c20" kind="function"><name>GetWeightOnlyMode</name></member>
+    <member refid="classslth_1_1_grid_system_1aaf788718169c162ef8e472a23bac9315" kind="function"><name>SetWeightOnlyMode</name></member>
+    <member refid="classslth_1_1_grid_system_1aa923bdb896c8c9b1dde6c8072720a141" kind="function"><name>ToggleWeightMode</name></member>
+    <member refid="classslth_1_1_grid_system_1a6db28bf061bc9e1718cd69479af4c960" kind="function"><name>PathAStarInternal</name></member>
+    <member refid="classslth_1_1_grid_system_1a19e92a2cc7b5b30d1974e21e25de57bf" kind="function"><name>CreateTiles</name></member>
+  </compound>
+  <compound refid="classslth_1_1_grid_tile" kind="class"><name>slth::GridTile</name>
+    <member refid="classslth_1_1_grid_tile_1a653cc572049c476953139b2fb93bdf71" kind="variable"><name>kInfinity</name></member>
+    <member refid="classslth_1_1_grid_tile_1af8d0a05b7c4a71455d538f3c2a85bda5" kind="variable"><name>kInvalidTile</name></member>
+    <member refid="classslth_1_1_grid_tile_1a7eda403d4e7d7d061eeed26c99af4426" kind="variable"><name>m_index</name></member>
+    <member refid="classslth_1_1_grid_tile_1a78fe6212731c46d9c3a4e5023017f44f" kind="variable"><name>m_coordinates</name></member>
+    <member refid="classslth_1_1_grid_tile_1aa7d259c040558952d76fcaad6551c6cc" kind="variable"><name>m_color</name></member>
+    <member refid="classslth_1_1_grid_tile_1ad20c252697c7e9f3423c123b5fe02bd6" kind="variable"><name>m_pActor</name></member>
+    <member refid="classslth_1_1_grid_tile_1a15968761a2d68ee703f95a8f9cc79dae" kind="variable"><name>m_type</name></member>
+    <member refid="classslth_1_1_grid_tile_1aeca1faf7cc8baa8268db601efa3b297b" kind="variable"><name>m_predecessor</name></member>
+    <member refid="classslth_1_1_grid_tile_1a8ee2c06520e03714f005d73fd8f511d2" kind="variable"><name>m_weight</name></member>
+    <member refid="classslth_1_1_grid_tile_1ab715662280519e8f6699f3150b5f4685" kind="variable"><name>m_gScore</name></member>
+    <member refid="classslth_1_1_grid_tile_1a9a6fe9faaeab395c02a9203fb8fb10e3" kind="variable"><name>m_fScore</name></member>
+    <member refid="classslth_1_1_grid_tile_1a337b10d7b18f7f802c7adc9e51133b52" kind="variable"><name>m_visited</name></member>
+    <member refid="classslth_1_1_grid_tile_1ae629d02b8fb722910ec133d029e8dd00" kind="function"><name>GridTile</name></member>
+    <member refid="classslth_1_1_grid_tile_1a88d5892f2be4c01b8de9912ff54e47d2" kind="function"><name>GridTile</name></member>
+    <member refid="classslth_1_1_grid_tile_1aeede54a9d1311ad0d6a38f519b3f8e09" kind="function"><name>GetFScore</name></member>
+    <member refid="classslth_1_1_grid_tile_1afe2709e3dbff8b5ac97e1e7c7b809a42" kind="function"><name>Reset</name></member>
+    <member refid="classslth_1_1_grid_tile_1adb32406354d04d1e8050d9111edeeba1" kind="function"><name>GetWeight</name></member>
+    <member refid="classslth_1_1_grid_tile_1ac6e09863f6b395759573f5ac351f1d3a" kind="function"><name>SetWeight</name></member>
+    <member refid="classslth_1_1_grid_tile_1a70545e9a6565f17dba122a87d4ad073e" kind="function"><name>GetCoordinates</name></member>
+    <member refid="classslth_1_1_grid_tile_1ada29250244b68f22a62ae953ecb3ae3f" kind="function"><name>SetColor</name></member>
+    <member refid="classslth_1_1_grid_tile_1ab85fd72068288830ebfec50ba131c0cb" kind="function"><name>GetType</name></member>
+    <member refid="classslth_1_1_grid_tile_1abb855aa664d1608012b654dd67c171cc" kind="function"><name>GetColor</name></member>
+    <member refid="classslth_1_1_grid_tile_1ae2b8c569f6fff5619b6d2fb93fd6ce65" kind="function"><name>GetIndex</name></member>
+    <member refid="classslth_1_1_grid_tile_1a75e7f288881f8d0bd41d03f8cc586aad" kind="function"><name>SetIndex</name></member>
+    <member refid="classslth_1_1_grid_tile_1a887e9efe2631348216d4a97b9d1a9bc0" kind="function"><name>SetScores</name></member>
+    <member refid="classslth_1_1_grid_tile_1a5985561df5671709b520c301ee073a43" kind="function"><name>GetGScore</name></member>
+    <member refid="classslth_1_1_grid_tile_1afc199c485fcd3e578353ea121ff0b2bd" kind="function"><name>SetPredecessor</name></member>
+    <member refid="classslth_1_1_grid_tile_1ac5d33dc1d69164b01a7eca60ec9d9862" kind="function"><name>GetPredecessor</name></member>
+    <member refid="classslth_1_1_grid_tile_1ad32a9a77ddaca16939b75f8abf23f9ff" kind="function"><name>SetType</name></member>
+    <member refid="classslth_1_1_grid_tile_1a244762fad4e083f24b45fe6c2e338503" kind="function"><name>GetVisited</name></member>
+    <member refid="classslth_1_1_grid_tile_1a7e3d6f83ae48796b2c9d5a8de47e041a" kind="function"><name>SetVisited</name></member>
+  </compound>
+  <compound refid="namespaceslth" kind="namespace"><name>slth</name>
+    <member refid="_grid_system_8h_1a217071fe91b2ebcd0f4110d10fdb1128" kind="typedef"><name>OpenSet</name></member>
+    <member refid="_grid_system_8h_1a975df20c81447987c560966959e6b837" kind="typedef"><name>GridPath</name></member>
+    <member refid="_grid_system_8h_1abc1de2b38f46f28673c6bd70eb822258" kind="variable"><name>nodePriorityFunc</name></member>
+  </compound>
+  <compound refid="namespacestd_1_1chrono__literals" kind="namespace"><name>std::chrono_literals</name>
+  </compound>
+  <compound refid="namespace_t_o_d_o" kind="namespace"><name>TODO</name>
+  </compound>
+  <compound refid="_grid_system_8cpp" kind="file"><name>GridSystem.cpp</name>
+    <member refid="_grid_system_8cpp_1a925be0e5ee5bf18263d5007f2280323e" kind="variable"><name>root2</name></member>
+  </compound>
+  <compound refid="_grid_system_8h" kind="file"><name>GridSystem.h</name>
+  </compound>
+  <compound refid="_grid_tile_8cpp" kind="file"><name>GridTile.cpp</name>
+  </compound>
+  <compound refid="_grid_tile_8h" kind="file"><name>GridTile.h</name>
+  </compound>
+</doxygenindex>

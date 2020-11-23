@@ -1,0 +1,138 @@
+\hypertarget{classslth_1_1_grid_tile}{}\doxysection{slth\+::Grid\+Tile Class Reference}
+\label{classslth_1_1_grid_tile}\index{slth::GridTile@{slth::GridTile}}
+
+
+Represents a single tile in the grid system  
+
+
+
+
+{\ttfamily \#include $<$Grid\+Tile.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+S\+L\+T\+H\+\_\+\+A\+PI \mbox{\hyperlink{classslth_1_1_grid_tile_ae629d02b8fb722910ec133d029e8dd00}{Grid\+Tile}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI \mbox{\hyperlink{classslth_1_1_grid_tile_a88d5892f2be4c01b8de9912ff54e47d2}{Grid\+Tile}} (int x, int y, float weight, Color color)
+\begin{DoxyCompactList}\small\item\em Explicit Constructor \end{DoxyCompactList}\item 
+S\+L\+T\+H\+\_\+\+A\+PI float \mbox{\hyperlink{classslth_1_1_grid_tile_aeede54a9d1311ad0d6a38f519b3f8e09}{Get\+F\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Fscore, but includes a weight of the tiles in the calculation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_afe2709e3dbff8b5ac97e1e7c7b809a42}\label{classslth_1_1_grid_tile_afe2709e3dbff8b5ac97e1e7c7b809a42}} 
+S\+L\+T\+H\+\_\+\+A\+PI void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_adb32406354d04d1e8050d9111edeeba1}\label{classslth_1_1_grid_tile_adb32406354d04d1e8050d9111edeeba1}} 
+S\+L\+T\+H\+\_\+\+A\+PI float {\bfseries Get\+Weight} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_ac6e09863f6b395759573f5ac351f1d3a}\label{classslth_1_1_grid_tile_ac6e09863f6b395759573f5ac351f1d3a}} 
+S\+L\+T\+H\+\_\+\+A\+PI void {\bfseries Set\+Weight} (float weight)
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_a70545e9a6565f17dba122a87d4ad073e}\label{classslth_1_1_grid_tile_a70545e9a6565f17dba122a87d4ad073e}} 
+S\+L\+T\+H\+\_\+\+A\+PI Vector2f {\bfseries Get\+Coordinates} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_ada29250244b68f22a62ae953ecb3ae3f}\label{classslth_1_1_grid_tile_ada29250244b68f22a62ae953ecb3ae3f}} 
+S\+L\+T\+H\+\_\+\+A\+PI void {\bfseries Set\+Color} (Color color)
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_ab85fd72068288830ebfec50ba131c0cb}\label{classslth_1_1_grid_tile_ab85fd72068288830ebfec50ba131c0cb}} 
+S\+L\+T\+H\+\_\+\+A\+PI u32 {\bfseries Get\+Type} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_abb855aa664d1608012b654dd67c171cc}\label{classslth_1_1_grid_tile_abb855aa664d1608012b654dd67c171cc}} 
+S\+L\+T\+H\+\_\+\+A\+PI Color {\bfseries Get\+Color} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_ae2b8c569f6fff5619b6d2fb93fd6ce65}\label{classslth_1_1_grid_tile_ae2b8c569f6fff5619b6d2fb93fd6ce65}} 
+S\+L\+T\+H\+\_\+\+A\+PI size\+\_\+t {\bfseries Get\+Index} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_a75e7f288881f8d0bd41d03f8cc586aad}\label{classslth_1_1_grid_tile_a75e7f288881f8d0bd41d03f8cc586aad}} 
+S\+L\+T\+H\+\_\+\+A\+PI void {\bfseries Set\+Index} (size\+\_\+t index)
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_a887e9efe2631348216d4a97b9d1a9bc0}\label{classslth_1_1_grid_tile_a887e9efe2631348216d4a97b9d1a9bc0}} 
+S\+L\+T\+H\+\_\+\+A\+PI void {\bfseries Set\+Scores} (float g\+Score, float f\+Score)
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_a5985561df5671709b520c301ee073a43}\label{classslth_1_1_grid_tile_a5985561df5671709b520c301ee073a43}} 
+S\+L\+T\+H\+\_\+\+A\+PI float {\bfseries Get\+G\+Score} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_afc199c485fcd3e578353ea121ff0b2bd}\label{classslth_1_1_grid_tile_afc199c485fcd3e578353ea121ff0b2bd}} 
+S\+L\+T\+H\+\_\+\+A\+PI void {\bfseries Set\+Predecessor} (size\+\_\+t index)
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_ac5d33dc1d69164b01a7eca60ec9d9862}\label{classslth_1_1_grid_tile_ac5d33dc1d69164b01a7eca60ec9d9862}} 
+S\+L\+T\+H\+\_\+\+A\+PI size\+\_\+t {\bfseries Get\+Predecessor} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_ad32a9a77ddaca16939b75f8abf23f9ff}\label{classslth_1_1_grid_tile_ad32a9a77ddaca16939b75f8abf23f9ff}} 
+S\+L\+T\+H\+\_\+\+A\+PI void {\bfseries Set\+Type} (u32 type)
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_a244762fad4e083f24b45fe6c2e338503}\label{classslth_1_1_grid_tile_a244762fad4e083f24b45fe6c2e338503}} 
+S\+L\+T\+H\+\_\+\+A\+PI bool {\bfseries Get\+Visited} ()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_a7e3d6f83ae48796b2c9d5a8de47e041a}\label{classslth_1_1_grid_tile_a7e3d6f83ae48796b2c9d5a8de47e041a}} 
+S\+L\+T\+H\+\_\+\+A\+PI void {\bfseries Set\+Visited} (bool visited)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_a653cc572049c476953139b2fb93bdf71}\label{classslth_1_1_grid_tile_a653cc572049c476953139b2fb93bdf71}} 
+static constexpr float {\bfseries k\+Infinity} = std\+::numeric\+\_\+limits$<$float$>$\+::max()
+\item 
+\mbox{\Hypertarget{classslth_1_1_grid_tile_af8d0a05b7c4a71455d538f3c2a85bda5}\label{classslth_1_1_grid_tile_af8d0a05b7c4a71455d538f3c2a85bda5}} 
+static constexpr u32 {\bfseries k\+Invalid\+Tile} = std\+::numeric\+\_\+limits$<$u32$>$\+::max()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a single tile in the grid system 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classslth_1_1_grid_tile_ae629d02b8fb722910ec133d029e8dd00}\label{classslth_1_1_grid_tile_ae629d02b8fb722910ec133d029e8dd00}} 
+\index{slth::GridTile@{slth::GridTile}!GridTile@{GridTile}}
+\index{GridTile@{GridTile}!slth::GridTile@{slth::GridTile}}
+\doxysubsubsection{\texorpdfstring{GridTile()}{GridTile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Grid\+Tile\+::\+Grid\+Tile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor 
+
+\mbox{\Hypertarget{classslth_1_1_grid_tile_a88d5892f2be4c01b8de9912ff54e47d2}\label{classslth_1_1_grid_tile_a88d5892f2be4c01b8de9912ff54e47d2}} 
+\index{slth::GridTile@{slth::GridTile}!GridTile@{GridTile}}
+\index{GridTile@{GridTile}!slth::GridTile@{slth::GridTile}}
+\doxysubsubsection{\texorpdfstring{GridTile()}{GridTile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily slth\+::\+Grid\+Tile\+::\+Grid\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{float}]{weight,  }\item[{Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Explicit Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X position\\
+\hline
+{\em y} & Y position\\
+\hline
+{\em weight} & Weight\\
+\hline
+{\em color} & Color\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classslth_1_1_grid_tile_aeede54a9d1311ad0d6a38f519b3f8e09}\label{classslth_1_1_grid_tile_aeede54a9d1311ad0d6a38f519b3f8e09}} 
+\index{slth::GridTile@{slth::GridTile}!GetFScore@{GetFScore}}
+\index{GetFScore@{GetFScore}!slth::GridTile@{slth::GridTile}}
+\doxysubsubsection{\texorpdfstring{GetFScore()}{GetFScore()}}
+{\footnotesize\ttfamily float slth\+::\+Grid\+Tile\+::\+Get\+F\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the Fscore, but includes a weight of the tiles in the calculation 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_grid_tile_8h}{Grid\+Tile.\+h}}\item 
+Grid\+Tile.\+cpp\end{DoxyCompactItemize}

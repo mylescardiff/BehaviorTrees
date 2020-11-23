@@ -1,0 +1,54 @@
+\hypertarget{_grid_system_8h}{}\doxysection{Grid\+System.\+h File Reference}
+\label{_grid_system_8h}\index{GridSystem.h@{GridSystem.h}}
+{\ttfamily \#include $<$Utilities/\+Vector2f.\+h$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$Utilities/\+Rect\+Int.\+h$>$}\newline
+{\ttfamily \#include $<$Graphics/\+I\+Texture.\+h$>$}\newline
+{\ttfamily \#include $<$Logic/\+Grid/\+Grid\+Tile.\+h$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classslth_1_1_grid_system}{slth\+::\+Grid\+System}}
+\begin{DoxyCompactList}\small\item\em Serves as a tile-\/based graph for drawing on screen, and finding things like best path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_t_o_d_o}{T\+O\+DO}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_grid_system_8h_a217071fe91b2ebcd0f4110d10fdb1128}\label{_grid_system_8h_a217071fe91b2ebcd0f4110d10fdb1128}} 
+typedef std\+::priority\+\_\+queue$<$ Grid\+Tile $\ast$, std\+::vector$<$ Grid\+Tile $\ast$ $>$, decltype(node\+Priority\+Func)$>$ {\bfseries slth\+::\+Open\+Set}
+\item 
+\mbox{\Hypertarget{_grid_system_8h_a975df20c81447987c560966959e6b837}\label{_grid_system_8h_a975df20c81447987c560966959e6b837}} 
+typedef std\+::vector$<$ Vector2f $>$ {\bfseries slth\+::\+Grid\+Path}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+auto \mbox{\hyperlink{_grid_system_8h_abc1de2b38f46f28673c6bd70eb822258}{slth\+::node\+Priority\+Func}}
+\begin{DoxyCompactList}\small\item\em Priority ordering function for the A$\ast$ (see Path\+A\+Star\+Internal) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_grid_system_8h_abc1de2b38f46f28673c6bd70eb822258}\label{_grid_system_8h_abc1de2b38f46f28673c6bd70eb822258}} 
+\index{GridSystem.h@{GridSystem.h}!nodePriorityFunc@{nodePriorityFunc}}
+\index{nodePriorityFunc@{nodePriorityFunc}!GridSystem.h@{GridSystem.h}}
+\doxysubsubsection{\texorpdfstring{nodePriorityFunc}{nodePriorityFunc}}
+{\footnotesize\ttfamily auto slth\+::node\+Priority\+Func}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [](GridTile* pLeft, GridTile* pRight)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} pLeft-\/>GetFScore() > pRight-\/>GetFScore();}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Priority ordering function for the A$\ast$ (see Path\+A\+Star\+Internal) 
+
